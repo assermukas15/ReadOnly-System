@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login-register.css">
+    <title>Login and Registration</title>
+</head>
+<body>
+
+    <!-- THE HEADER OF THE PAGE SECTION -->
+
+    <header class="site-header">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logos/logo-1.png" alt="University Logo"></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="../pages/forgot-password.php">Change Password</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- THE LOGIN AND REGISTER SECTION -->
+    
+    <div class="background"></div>
+    <div class="form-container">
+        <div class="form-toggle">
+            <button id="login-btn" class="active">Login</button>
+            <button id="register-btn">Register</button>
+        </div>
+        <form id="login-form" class="active-form" action="../scripts/process-login.php" method="post">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" id="emaillog" name="emaillog" required>
+            <input type="password" placeholder="Password" id="passwordlog" name="passwordlog" required>
+            <a href="../pages/forgot-password.php">Forgot Password?</a>
+            <button type="submit">LOGIN</button>
+        </form>
+        <form action="../scripts/process-register.php" method="post" id="register-form">
+            <h2>Register</h2>
+            <input type="text" placeholder="Full Name" id="name" name="name" required>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <input type="password" placeholder="Confirm Password" id="password_confirmation" name="password_confirmation" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+
+
+    
+
+
+
+
+    <!-- JavaScript linking point to the index page of the website -->
+    <script src="../JS/login-register.js"></script>
+</body>
+</html>

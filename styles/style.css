@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Import Google Font Spartan */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif; /* Apply Spartan font as fallback */
+}
+
+/* THIS IS THE HEADER SECTION WHICH CONTAINS THE NAVIGATION BAR */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    min-width: 750px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+
+.logo img {
+    max-width: 400px;
+    height: 60px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Spartan', sans-serif; /* Apply Spartan font */
+}
+
+.main-nav a:hover {
+    color: rgba(160, 0, 42);
+}
+
+.main-nav a.active {
+    color: rgba(160, 0, 42);
+}
+
+.main-nav a.active::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: rgba(160, 0, 42);
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+}
+
+.main-nav a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: rgba(160, 0, 42);
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+}
+
+
+/* HOME SECTION */
+
+.home-section {
+    background-image: url("../images/backgrounds/background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 750px;
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    padding-bottom: 20px;
+}
+
+#contact .contact {
+    justify-content: center;
+    padding-top: 10px;
+}

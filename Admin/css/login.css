@@ -1,0 +1,198 @@
+/* styles.css */
+
+/* Import Google Font Spartan */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif; /* Apply Spartan font as fallback */
+    min-width: 1821px;
+}
+
+
+/* THIS IS THE HEADER SECTION WHICH CONTAINS THE NAVIGATION BAR */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+
+.logo img {
+    max-width: 400px;
+    height: 60px;
+}
+
+
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Spartan', sans-serif; /* Apply Spartan font */
+}
+
+.main-nav a:hover {
+    color: rgba(160, 0, 42);
+}
+
+.main-nav a.active {
+    color: rgba(160, 0, 42);
+}
+
+.main-nav a.active::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: rgba(160, 0, 42);
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+}
+
+.main-nav a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: rgba(160, 0, 42);
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Spartan', sans-serif; /* Apply Spartan font as fallback */
+    background-color: #f9f9f9;
+    overflow: hidden; /* Hide background overflow */
+}
+
+ 
+
+/* BACKGROUND STYLE CODE */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/backgrounds/Background-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* FORM'S CODE CONTAINNING THE REGISTRATION AND THE LOGIN PARTS */
+
+.form-container {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    gap: 5px;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* FORM TOOGLE BUTTON STYLING */
+.form-toggle button {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 50px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.form-toggle button:hover{
+    background-color: rgba(246, 150, 28);
+}
+
+.form-toggle button.active {
+    background-color: rgba(160, 0, 42);
+    color: rgb(255, 255, 255);
+}
+
+
+form {
+    display: none;
+}
+
+form.active-form {
+    display: block;
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(246, 150, 28);
+    border-radius: 5px;
+}
+
+form a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: rgba(160, 0, 42);
+    color: #fff;
+    border: none;
+    padding: 15px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: rgba(246, 150, 28);
+}
+
+
+#contact .contact {
+    justify-content: center;
+    padding-top: 10px;
+}
